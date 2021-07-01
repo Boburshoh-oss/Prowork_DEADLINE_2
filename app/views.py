@@ -9,7 +9,6 @@ def index(request):
     blog=Blog.objects.all()
     tag=Tag.objects.all()
     
-    
     # users_in_group = Group.objects.get(name="Admin").user_set.all()
     # is_member = request.user in users_in_group
  

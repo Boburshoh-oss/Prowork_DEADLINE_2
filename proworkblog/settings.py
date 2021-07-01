@@ -112,8 +112,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "uz"
 LANGUAGE_COOKIE_NAME = "lang"
 LANGUAGES = (
-    ('ru', "Ру"),
     ('uz', "O'z"),
+    ('ru', "Ру"),
     ('en', "En"),
 )
 TIME_ZONE = 'UTC'
@@ -131,8 +131,8 @@ LOCALE_PATHS = (
 
 PARLER_LANGUAGES = {
     None: (
-        {'code': 'ru', },
         {'code': 'uz', },
+        {'code': 'ru', },
         {'code': 'en', },
     ),
     'default': {
