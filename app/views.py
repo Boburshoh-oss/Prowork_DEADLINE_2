@@ -63,23 +63,37 @@ def category(request, slug):
     categories = Category.objects.all()
     regions=Regions.objects.all()
     tag=Tag.objects.all()
-    context = {
-        'blog':posts,
-        'categories':categories,
+    page = request.GET.get('page',1)
+    paginator = Paginator(posts,3)
+    # comments_count=posts.Comment_set.all()
+
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator,1)
+    
+
+    return render(request,"index.html", {
+        "categories":categories,
         "regions":regions,
+        'blog':posts,
         'tag':tag
-    }
-    return render(request, 'index.html', context)   
+    })
+
 
 def tagged(request, slug):
     tag = get_object_or_404(Tag, slug=slug)
     posts = Blog.objects.filter(tags=tag)
     categories = Category.objects.all()
     regions=Regions.objects.all()
+    tag=Tag.objects.all()
     context = {
         'blog':posts,
         'categories':categories,
         "regions":regions,
+        'tag':tag
     }
     return render(request, 'index.html', context)    
 
