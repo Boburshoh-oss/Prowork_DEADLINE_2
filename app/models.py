@@ -49,6 +49,7 @@ class Blog(TranslatableModel):
 
     class Meta:
         verbose_name_plural = 'Blog'
+        ordering = ['-id']
 
     def __str__(self):
         return self.safe_translation_getter('title') or ''

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-30 21:40+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\app\models.py:9
+msgid "Name"
+msgstr "Имя"
+
+#: .\app\models.py:41
+msgid "Title"
+msgstr "Заголовок"
+
+#: .\app\models.py:42
+msgid "Description"
+msgstr "Описание"
+
+#: .\templates\index.html:34
+msgid "Video Catalog"
+msgstr "Видео каталог"
+
+#: .\templates\index.html:51
+msgid "Videos"
+msgstr "Видео"
+
+#: .\templates\index.html:51
+msgid "(current)"
+msgstr "(Текущий)"
+
+#: .\templates\index.html:54
+msgid "About"
+msgstr "Справка"
+
+#: .\templates\index.html:57
+msgid "Contact"
+msgstr "Контакт"

@@ -1,4 +1,6 @@
+{% load i18n %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,9 +29,9 @@ https://templatemo.com/tm-552-video-catalog
                 <div class="container-fluid position-relative">
                     <div class="row">
                         <div class="col-7 col-md-4">
-                            <a href="index.html" class="tm-bg-black text-center tm-logo-container">
+                            <a href="{% url 'index' %}" class="tm-bg-black text-center tm-logo-container">
                                 <i class="fas fa-video tm-site-logo mb-3"></i>
-                                <h1 class="tm-site-name">Video Catalog</h1>
+                                <h1 class="tm-site-name">{% trans "Video Catalog" %}</h1>
                             </a>
                         </div>
                         <div class="col-5 col-md-8 ml-auto mr-0">
@@ -46,13 +48,13 @@ https://templatemo.com/tm-552-video-catalog
                                     <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                                         <ul class="navbar-nav text-uppercase">
                                             <li class="nav-item active">
-                                                <a class="nav-link tm-nav-link" href="#">Videos <span class="sr-only">(current)</span></a>
+                                                <a class="nav-link tm-nav-link" href="#">{% trans 'Videos' %} <span class="sr-only">{% trans '(current)' %}</span></a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                                <a class="nav-link tm-nav-link" href="#">{% trans 'About' %}</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                                                <a class="nav-link tm-nav-link" href="#">{% trans 'Contact' %}</a>
                                             </li>
                                         </ul>
                                     </div>
